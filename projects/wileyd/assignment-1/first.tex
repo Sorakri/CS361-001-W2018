@@ -1,0 +1,41 @@
+\documentclass[12pt]{article}
+%\usepackage{times}
+\usepackage{cite}
+%this is a comment
+\title{Slope Map}
+\author{Ryan Sisco and Daniel Wiley}
+
+
+
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+
+
+\section{Introduction}
+Mapping trail systems is a very important task in order to keep people from getting lost, finding new places, and finding the best route for them. Unfortunately, many maps are unable to provide a great layout of elivation change in a given area. While the information is sometimes given, it is not provided in a way that is user friendly and quick to read.
+\subsection{Why Mapping Slope Matters}
+Mapping slope is a great way of showing the accessibility in a given area. Very steep slopes indicate a difficult obstacle,and level ground is more efficient then severe uphill/downhill\cite{Perrey:2007}. Checking elevation requires map reading knowledge and access to a good map. By creating a map that displays this information in terms of slope, even new map users will be able to find the best path for them. Search and Rescue often uses similar tools to help navigate\cite{Hurst:2017}\cite{Gabbert:2017}\cite{Pfau:2013}.
+\subsection{Shortcommings of Most Maps}
+Developing maps has always been a challenge. Getting details for certain areas is difficult, and maps are often outdated. To add to this, reading a map requires thought and planning in order to build the best route.
+
+\section{Building Slope Map}
+There are many ways to build a successful version of this tool, such as a website, desktop app, or mobile app. We believe that developing an algorithm to gather existing elevation and distance, convert into slope, and graph the desired results is the most important task. This will make integrating into different systems easier. The most similar tool existing right now is very expensive and designed for business use. Slope Map will be designed for individuals as well as groups.
+\subsection{Planned Features}
+There are many features that need to be added into the software in order to make the user experience great. This includes the data collection, mapping display, user-map interaction, and accessibility.
+\subsubsection{Data Collection}
+Map data is usually public. Google offers data and pulling from that source would help populate our map in order to calculate slope easier. Getting a reliable data pull is essential to building this software. Pulling the right ammount is also very important, and needs to be tested.
+\subsubsection{Mapping Display}
+Understanding what the user is seeing is important. A grey-scale map would help the user understand the landscape they are viewing and where the best route would be. A simple red-yellow-green color scheme indicating steepness would also be useful, and a toggle button may be added to switch between options.
+\subsubsection{User Interaction}
+Creating an easy to use and understand mapping system will help create a better representation of map data to the actual landscape. This means that users will need to be able to quickly search for their location, see a map, and download for later use. The map needs to be easy to read and understand.
+\subsubsection{Accessibility}
+This software is ideally available offline. Many of the locations that would require using this tool are without cell reception or internet service. Having maps already stored and saved by the user would allow easy access no matter where they were. This would require the user to download maps in their area.
+\subsection{Challenges and Obstacles}
+Developing a tool like this will take a lot of time. Making it reliable and easy to understand is the whole point of the software, and it is very important it works correctly. Our largest challenge is gathering, converting, and exporting data correctly. Once that is done, creating a working UI should be easy when the foundation is secured. Testing will need to be done to have a display that works best with many clients. 
+\bibliography{./myref}
+\bibliographystyle{plain}
+
+\end{document}
