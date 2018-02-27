@@ -1,0 +1,232 @@
+\section{Corresponding Tasks}
+
+\begin{itemize}
+	\item Overview on login
+	\begin{itemize}
+		\item Prerequisites: Login
+		\item Tasks:
+		\begin{itemize}
+			\item Front-end: User profile page
+			\item Back-end: Return user\_profile data object
+			\item Database: Build user\_profile table and write selct queries
+		\end{itemize}
+		\item Estimated Time: 1 day
+	\end{itemize}
+
+	\item Viewing Borrowers
+	\begin{itemize}
+		\item Prerequisites:Login, User schema
+		\item Tasks:
+		\begin{itemize}
+			\item Front-end: Page that displays a list of borrowers
+			\item Back-end: Return a list of objects that are borrowers
+			\item Database: Quries return all users that are borrowers
+		\end{itemize}
+		\item Estimated Time:2-3 Days
+	\end{itemize}
+
+	\item My loan overview
+	\begin{itemize}
+		\item Prerequisites: Login, Overview on login feature, User schema built, Loan schema built
+		\item Tasks:
+		\begin{itemize}
+			\item Front-end: Page displays loan details associated with a user
+			\item Back-end: Return the loan object data associated with a user
+			\item Database: Query that selects the loan associated with a user
+		\end{itemize}
+		\item Estimated Time: 1 day
+	\end{itemize}
+
+	\item Loan Custom Plans
+	\begin{itemize}
+		\item Prerequisites: Borrowers Lists feature, view borrower's profile feature
+		\item Tasks:
+		\begin{itemize}
+			\item Front-end: Display a page that has a form to create a proposal
+			\item Back-end: receive a proposal, save to database, and notify the borrower.
+			\item Database: Build proposal table, insert query for proposal.
+		\end{itemize}
+		\item Estimated Time: 1-2 days
+	\end{itemize}
+
+	\item Partial Loans
+	\begin{itemize}
+		\item Prerequisites: Loan custom plans implemented, bank connection feature implemented
+		\item Tasks:
+		\begin{itemize}
+			\item Front-end: A form to submit a parial payment
+			\item Back-end: Receive the payment submission and call API to handle payment, update related recores via the database(such as lender and borrower information), and notify the borrower
+			\item Database: Query insert the payment record, update related tables
+		\end{itemize}
+		\item Estimated Time: 3-5 days
+	\end{itemize}
+
+	\item Borrower information
+	\begin{itemize}
+		\item Prerequisites: Login overview implemented
+		\item Tasks:
+		\begin{itemize}
+			\item Front-end: A page displaying borrower profile attributes that are visible to lenders.
+			\item Back-end: Receive request and return the borrower's profile data object to front-end
+			\item Database: Selcet query on borrower\_profile table
+		\end{itemize}
+		\item Estimated Time: 1 day
+	\end{itemize}
+
+	\item Risk Evaluation
+	\begin{itemize}
+		\item Prerequisites: Borrower's profile feature implemented
+		\item Tasks:
+		\begin{itemize}
+			\item Front-end: Page displays the score(s) outputted from the risk evaluation algorithm
+			\item Back-end: Return an object containing score(s)
+			\item Database: Update score record of the borrowers
+		\end{itemize}
+		\item Estimated Time: 5-7 days
+	\end{itemize}
+
+	\item Bank Connection
+	\begin{itemize}
+		\item Prerequisites: Bank customization feature implemented
+		\item Tasks:
+		\begin{itemize}
+			\item Front-end: None
+			\item Back-end: Receive action(deposit, withdraw) request, connect ot bank, and perform appropriate action
+			\item Database: Securely store bank/card information if user chose to save that data for later uses.
+		\end{itemize}
+		\item Estimated Time: 3-4 days
+	\end{itemize}
+
+	\item Complete Statement
+	\begin{itemize}
+		\item Prerequisites: None
+		\item Tasks:
+		\begin{itemize}
+			\item Front-end: None
+			\item Back-end: Query all related tables, generate a pdf and return that pdf to user
+			\item Database: Select queries for all related tables
+		\end{itemize}
+		\item Estimated Time: 3-4 days
+	\end{itemize}
+
+	\item Bank Account Customization
+	\begin{itemize}
+		\item Prerequisites: None
+		\item Tasks:
+		\begin{itemize}
+			\item Front-end: Form asking for bank/card information
+			\item Back-end: Receive add/remove bank/card information request, and perform appropriate action on database, return result to front-end
+			\item Database: Add/delete query on bank\_information table
+		\end{itemize}
+		\item Estimated Time: 1-2 days
+	\end{itemize}
+
+	\item Create Account
+	\begin{itemize}
+		\item Prerequisites: None
+		\item Tasks:
+		\begin{itemize}
+			\item Front-end: Webpage for signup
+			\item Back-end: Send user's name/password to database
+			\item Database: Send and store data in database
+		\end{itemize}
+		\item Estimated Time:1 day
+	\end{itemize}
+
+	\item Borrower creates a profile
+	\begin{itemize}
+		\item Prerequisites: Create account 
+		\item Tasks:
+		\begin{itemize}
+			\item Front-end: Create web page for profile borrower data submission
+			\item Back-end: Set up database for borrower profile data
+			\item Database: Code reading data to database
+		\end{itemize}
+		\item Estimated Time: 1 day
+	\end{itemize}
+
+	\item Delete Borrower profile
+	\begin{itemize}
+		\item Prerequisites: Create account
+		\item Tasks:
+		\begin{itemize}
+			\item Front-end: Web page for confirming account deletion
+			\item Back-end: Check if user has active loans, allow deletion if no active loans found.
+			\item Database: Remove user information from database
+		\end{itemize}
+		\item Estimated Time: 1 day
+	\end{itemize}
+
+	\item Editing Borrower profile
+	\begin{itemize}
+		\item Prerequisites: Borrower creates a profile
+		\item Tasks:
+		\begin{itemize}
+			\item Front-end: Web page for profile data editing
+			\item Back-end: Query database for current information
+			\item Database: Update changed user data
+		\end{itemize}
+		\item Estimated Time: 1 day
+	\end{itemize}
+
+	\item Lender creates a profile
+	\begin{itemize}
+		\item Prerequisites:Create account
+		\item Tasks:
+		\begin{itemize}
+			\item Front-end: Create web page for lender profile data submission
+			\item Back-end: Set up database for lender profile data
+			\item Database: Code reading data to database
+		\end{itemize}
+		\item Estimated Time: 1 day
+	\end{itemize}
+
+	\item Delete Lender Account
+	\begin{itemize}
+		\item Prerequisites: Create account
+		\item Tasks:
+		\begin{itemize}
+			\item Front-end: Web page for confirming account deletion
+			\item Back-end: Check if user has active loans, allow deletion if no active loans found.
+			\item Database: Remove user information from database
+		\end{itemize}
+		\item Estimated Time: 1 day
+	\end{itemize}
+
+	\item Boilerplate loans
+	\begin{itemize}
+		\item Prerequisites: Bank Connection
+		\item Tasks:
+		\begin{itemize}
+			\item Front-end: Webpage presenting boilerplate loan plans
+			\item Back-end: Send appropriate requests based on boilerplate loan plan selected
+			\item Database: Query appropriate information based on loan plan selected
+		\end{itemize}
+		\item Estimated Time: 1 day
+	\end{itemize}
+
+	\item Contact support
+	\begin{itemize}
+		\item Prerequisites:None
+		\item Tasks:
+		\begin{itemize}
+			\item Front-end: Webpage for support contact information
+			\item Back-end: None
+			\item Database: None
+		\end{itemize}
+		\item Estimated Time: 1 day
+	\end{itemize}
+
+	\item Supporting documents
+	\begin{itemize}
+		\item Prerequisites:None
+		\item Tasks:
+		\begin{itemize}
+			\item Front-end: Webpage for supporting documents
+			\item Back-end: None
+			\item Database: None
+		\end{itemize}
+		\item Estimated Time: Several Hours
+	\end{itemize}
+\end{itemize}
+
